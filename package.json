@@ -1,0 +1,27 @@
+{
+  "name": "trinity",
+  "version": "1.0.0",
+  "description": "\"A Publish-Subscribe Broker with Blockchain-based Immutability for the IoT and Supply Chain Monitoring\"",
+  "main": "brokerABCI.js",
+  "scripts": {
+    "test": " \"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANRGUSC/Trinity.git"
+  },
+  "keywords": [
+    "\"Immutable",
+    "Broker\""
+  ],
+  "author": "Gowri Sankar Ramachandran <gsramach@usc.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ANRGUSC/Trinity/issues"
+  },
+  "homepage": "https://github.com/ANRGUSC/Trinity#readme",
+  "dependencies": {
+    "abci": "^2.1.0",
+    "mqtt": "^2.18.0"
+  }
+}

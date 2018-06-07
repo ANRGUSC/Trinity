@@ -11,12 +11,14 @@ These instructions will get you a copy of the project up and running on your loc
 To run Trinity on your computer, the following broker and blockchain software has to be installed on your machine.
 
 **Tendermint**
-Our framework is implemented and evaluated using the Tendermint blockchain framework. Please refer to the following
+
+Trinity is implemented and evaluated using the Tendermint blockchain framework. Please refer to the following
 documentation for [installation of Tendermint](https://github.com/tendermint/tendermint/wiki/Installation).
 
-```
-Give examples
-```
+**Mosquitto MQTT Broker**
+
+MQTT broker is used as a publish-subscribe communication protocol in the implementation and evaluation of Trinity. Please
+install MQTT using the following [documentation](https://mosquitto.org/download/).
 
 ### Installing
 
