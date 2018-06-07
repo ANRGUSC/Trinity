@@ -22,51 +22,72 @@ install MQTT using the following [documentation](https://mosquitto.org/download/
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+This repository has to be cloned on your machine to install Trinity.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+**Step 1**
 
 ```
-until finished
+git clone https://github.com/ANRGUSC/Trinity.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+And then,
+
+```
+npm install
+```
+
+Once the above command is successfully executed on your system, trinity and all the other necessary libraries are available for use.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+To test Trinity framework on your machine, the following steps must be followed:
 
-### Break down into end to end tests
+**Step 1**
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+The brokerABCI application must be started first before starting the Tendermint consensus engine. Start brokerABCI on a terminal:
 
 ```
-Give an example
+node brokerABCI.js
 ```
+
+**Step 2**
+
+Before starting the blockchain network, it must be configured appropriately. The following documentation explains the configuration details of the Tendermint framework ([documentation](http://tendermint.readthedocs.io/projects/tools/en/master/specification/configuration.html)).Start the Tendermint blockchain network on a new terminal:
+
+```
+tendermint init
+```
+
+**Step 3**
+
+The brokerABCI and the blockchain framework are running, and it is ready to receive broker transactions and contracts. Start the trinityMarshall appplication, which pushes the registered topics to the blockchain network for the execution of smart contracts, concensus protocol, and block creation. Start Trinity application on a new terminal:
+
+```
+node trinityMarshal.js
+```
+
+Now one of the Trinity instance is ready for handling broker transactions.
+
+**Step 4**
+
+Any MQTT publisher can publish the data to the broker running on your machine. Libraries are available in languages such as Python, Node JS, Java, etc., for publishing data to MQTT broker. As an example, we provide Node JS-based application for publishing data. Start a  publisher on a new terminal:
+
+```
+node tools/publisher.js
+```
+
+Now the data from registered publisher will be verified and stored on the Tendermint Blockchain. To understand the details of the consensus and block creation, please refer to the following [documentation] (http://tendermint.readthedocs.io/projects/tools/en/master/index.html). 
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Trinity was evaluated on a 20-node Raspberry Pi testbed. All the devices were connected through a LAN. Our preliminary results are available in our article here.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* Ubuntu - 16.04.1
+* Node - 8.11.2
+* Mosquitto - 1.4.10
+* Tendermint - 0.19.6
 
 ## Contributing
 
@@ -78,16 +99,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Gowri Sankar Ramachandran <gsramach@usc.edu>**
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
