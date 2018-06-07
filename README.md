@@ -76,7 +76,7 @@ Any MQTT publisher can publish the data to the broker running on your machine. L
 node tools/publisher.js
 ```
 
-Now the data from registered publisher will be verified and stored on the Tendermint Blockchain. To understand the details of the consensus and block creation, please refer to the following [documentation] (http://tendermint.readthedocs.io/projects/tools/en/master/index.html). 
+Now the data from registered publisher will be verified and stored on the Tendermint Blockchain. To understand the details of the consensus and block creation, please refer to the following [documentation] (http://tendermint.readthedocs.io/projects/tools/en/master/index.html).
 
 ## Deployment
 
