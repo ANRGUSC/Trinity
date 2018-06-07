@@ -2,6 +2,8 @@
 A Publish-Subscribe Broker with Blockchain-based Immutability for the IoT and Supply Chain Monitoring. Applications with multiple stakeholders that rely on a centralized communication model does not guarantee trustless communication. Trinity combines the publish-subscribe broker with the blockchain technology to guarantee persistence, ordering, and
 immutability across trust boundaries.
 
+This is release 1.0, we are still working to improve it.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -93,13 +95,23 @@ Trinity was evaluated on a 20-node Raspberry Pi testbed. All the devices were co
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
+## Version 1.0
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+* Implementation of wrapper for connecting the broker with the Tendermint
+* Preliminary support for smart contract
+* APIs for fetching verified transactions from the Tendermint framework
+
+## Future and Ongoing Work
+
+* Extend the smart contract functionalities
+* Support for aggregation of transactions
+* User-friendly framework for adding/removing/reconfiguring validators
 
 ## Authors
 
 * **Gowri Sankar Ramachandran <gsramach@usc.edu>**
+* **Kwame-Lante Wright <kwamelaw@usc.edu>**
+* **Bhaskar Krishnamachari <bkrishna@usc.edu>**
 
 ## License
 
