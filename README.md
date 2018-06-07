@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 To run Trinity on your computer, the following broker and blockchain software has to be installed on your machine.
 
-######Tendermint
+**Tendermint**
 
 ```
 Give examples
