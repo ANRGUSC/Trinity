@@ -11,6 +11,8 @@ These instructions will get you a copy of the project up and running on your loc
 To run Trinity on your computer, the following broker and blockchain software has to be installed on your machine.
 
 **Tendermint**
+Our framework is implemented and evaluated using the Tendermint blockchain framework. Please refer to the following
+documentation for [installation of Tendermint](https://github.com/tendermint/tendermint/wiki/Installation).
 
 ```
 Give examples
