@@ -88,6 +88,7 @@ Trinity was evaluated on a 20-node Raspberry Pi testbed. All the devices were co
 
 * Ubuntu - 16.04.1
 * Node - 8.11.2
+* npm - 5.6.0
 * Mosquitto - 1.4.10
 * Tendermint - 0.19.6
 
@@ -115,4 +116,4 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under a permissive license - please see [LICENSE.md](LICENSE.md) for details
