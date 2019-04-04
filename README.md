@@ -1,6 +1,7 @@
 # Trinity
-A Publish-Subscribe Broker with Blockchain-based Immutability for the IoT and Supply Chain Monitoring. Applications with multiple stakeholders that rely on a centralized communication model does not guarantee trustless communication. Trinity combines the publish-subscribe broker with the blockchain technology to guarantee persistence, ordering, and
-immutability across trust boundaries.
+Trinity is a Byzantine Fault-Tolerant Distributed Publish-Subscribe System with Immutable Blockchain-based Persistence. Applications with multiple stakeholders that rely on a centralized communication model does not guarantee trustless communication. Trinity combines the publish-subscribe broker with the blockchain technology to guarantee persistence, ordering, and immutability across trust boundaries.
+
+This work will appear at the IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2019).
 
 This is release 1.0, we are still working to improve it.
 
